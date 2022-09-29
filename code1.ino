@@ -74,24 +74,12 @@ void handleMessage(AdafruitIO_Data *data) {
 
  
   stop();
-  // separate text and number ingredients
-//  for (int i = 0; i < commandStr.length(); i++) {
-//    if (commandStr.substring(i, i+1) == ":") {
-//      cmd = commandStr.substring(0, i);
-//      angle = commandStr.substring(i+1).toInt();
-//      break;
-//    }
-//  }
-
-  // print command
-//  Serial.println(cmd);
-//  Serial.println(angle);
-
+  
   Serial.println(commandStr);
   // perform movements
   // LEFT
  if (commandStr=="left" || commandStr=="Left"){   
-    Serial.println(2055); 
+    Serial.println("IN"); 
     digitalWrite(D4,HIGH);
     digitalWrite(D3,HIGH);
     digitalWrite(D5,LOW);
@@ -101,7 +89,7 @@ void handleMessage(AdafruitIO_Data *data) {
   }
   // RIGHT
   if (commandStr=="right" || commandStr=="Right" ){  
-    Serial.println(205);   
+    Serial.println("IN");   
     digitalWrite(D4,LOW);
     digitalWrite(D3,HIGH);
     digitalWrite(D5,HIGH);
@@ -111,7 +99,7 @@ void handleMessage(AdafruitIO_Data *data) {
   }
   // FORWARD
   if (commandStr=="forward" || commandStr=="Forward"){    
-    Serial.println(205); 
+    Serial.println("IN"); 
     digitalWrite(D4,LOW);
     digitalWrite(D3,HIGH);
     digitalWrite(D5,LOW);
@@ -121,7 +109,7 @@ void handleMessage(AdafruitIO_Data *data) {
   }
   // BACK
   if (commandStr=="backward" || commandStr=="Backward"){  
-    Serial.println(2000);   
+    Serial.println("IN");   
     digitalWrite(D4,HIGH);
     digitalWrite(D3,LOW);
     digitalWrite(D5,HIGH);
