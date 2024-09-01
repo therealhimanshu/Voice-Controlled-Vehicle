@@ -1,3 +1,7 @@
-# Voice Controlled Vehicle
+## Repository Description:
+This repository contains code and files for the project voice controlled vehicle. The programming language used in this repository is C++.
 
-## Using NodeMCU and IFTTT for this code
+## Voice-Controlled Vehicle 
+The voice controlled vehicle is based on NodeMCU microcontroller.
+
+
